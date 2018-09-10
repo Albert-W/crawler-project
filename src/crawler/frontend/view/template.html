@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>珍爱网-爬虫</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+</head>
+<body>
+
+<div class="limiter">
+    <div class="container-table100">
+        <div class="wrap-table100">
+            <div class="table100">
+                <div class="search-box" align="middle">
+                    <!--提交get-->
+                    <form method="get">
+                        <!--此处输入搜索语句-->
+
+                        <input placeholder="请输入关键词进行检索" type="text" maxlength="100" value="{{.Query}}" name="q">
+                        <!--<button type="submit" class="btn btn-info" style="text-align:center;display:inline;height:40px;">搜索</button>-->
+                        <button type="submit" class="btn">搜索</button>
+                    </form>
+                </div >
+                <div>
+
+                </div>
+                <h7 class="search-result">共为你找到相关结果约为{{.Hits}}个，显示从{{.Start}}起共{{len .Items}}个</h7>
+                <table>
+                    <thead>
+                    <tr class="table100-head">
+                        <th class="column_start">昵称</th>
+                        <th class="column">性别</th>
+                        <th class="column">年龄</th>
+                        <th class="column">身高</th>
+                        <th class="column">体重</th>
+                        <th class="column">收入</th>
+                        <th class="column">学历</th>
+                        <th class="column">工作</th>
+                        <th class="column">户口</th>
+                        <th class="column">星座</th>
+                        <th class="column">购房</th>
+                        <th class="column_end">购车</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+					{{range .Items}}
+                    <tr>
+                        <td class="column_start"><a href="{{.Url}}" target="_blank">{{.Payload.Name}}</a></td>
+					{{with .Payload}}
+                        <td class="column">{{.Gender}}</td>
+                        <td class="column">{{.Age}}</td>
+                        <td class="column">{{.Height}}</td>
+                        <td class="column">{{.Weight}}</td>
+                        <td class="column">{{.Income}}</td>
+                        <td class="column">{{.Education}}</td>
+                        <td class="column">{{.Occupation}}</td>
+                        <td class="column">{{.Hokou}}</td>
+                        <td class="column">{{.Xinzuo}}</td>
+                        <td class="column">{{.House}}</td>
+                        <td class="column_end">{{.Car}}</td>
+					{{end}}
+                    </tr>
+					{{else}}
+                    <div style="text-align:center">
+                        <h6 class="search-result" >没有找到相关用户</h6>
+                    </div>
+					{{end}}
+                    </tbody>
+                </table>
+                <!--执行上下页-->
+                <div align="middle">
+                    <!--上一页不能为负-->
+				{{if ge .PrevFrom 0}}
+                    <a href="search?q={{.Query}}&from={{.PrevFrom}}">上一页</a>
+				{{end}}
+                    <a href="search?q={{.Query}}&from={{.NextFrom}}">下一页</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <hr>
+            <p>Go语言爬虫项目产品展示 @<a href="https://github.com/Albert-W">Albert-W</a></p>
+        </footer>
+    </div>
+
+</div>
+
+
+<!--===============================================================================================-->
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="js/main.js"></script>
+
+</body>
+</html>
