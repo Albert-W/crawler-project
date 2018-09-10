@@ -23,7 +23,7 @@ This is the homePage
 - Visit "http://localhost:8888/" in your browser
 - Type in query string with REST format. such as "女 && Age>20"
 
-##Usage for Concurent
+##Usage for Concurrent
 - Start Docker.
 - Run Script "docker run -d -p 9200:9200 elasticsearch"
 - run "src/crawler_distributed/persist/server/ItemSaver.go"
@@ -32,3 +32,6 @@ This is the homePage
 - Run "src/crawler/frontend/starter.go", to view the result in the website.
 - Visit "http://localhost:8888/" in your browser
 - Type in query string with REST format. such as "男 && 已购车"
+
+##Reference
+- Google资深工程师深度讲解Go语言 @ https://coding.imooc.com/class/180.html
