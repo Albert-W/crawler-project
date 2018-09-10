@@ -15,6 +15,16 @@ This is the homePage
 - Microservices
 - Singleton -> Concurrent -> Distribute
 
+##Installation and go package
+- go language
+- docker
+- elasticsearch
+- go get golang.org/x/text
+- go get -v github.com/gpmgo/gopm
+- gopm get -g -v golang.org/x/text
+- gopm get -g -v golang.org/x/net/html
+- go get gopkg.in/olivere/elastic.v5
+
 ##Usage for Singleton 
 - Start Docker.
 - Run Script "docker run -d -p 9200:9200 elasticsearch"
