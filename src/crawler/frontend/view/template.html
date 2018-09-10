@@ -37,10 +37,10 @@
                         <button type="submit" class="btn">搜索</button>
                     </form>
                 </div >
-                <div>
+                <div align="middle">
+                    <h7 class="search-result">共为你找到相关结果约为{{.Hits}}个，显示从{{.Start}}起共{{len .Items}}个</h7>
+                </div >
 
-                </div>
-                <h7 class="search-result">共为你找到相关结果约为{{.Hits}}个，显示从{{.Start}}起共{{len .Items}}个</h7>
                 <table>
                     <thead>
                     <tr class="table100-head">
