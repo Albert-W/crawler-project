@@ -4,7 +4,6 @@ import (
 	"crawler/engine"
 	"crawler/model"
 	"crawler_distributed/config"
-	"log"
 	"regexp"
 	"strconv"
 )
@@ -120,7 +119,6 @@ func (p *ProfileParser) Parse(contents []byte, url string) engine.ParseResult {
 }
 
 func (p *ProfileParser) Serialize() (name string, args interface{}) {
-	log.Print("ProfileParser Serialize")
 	//return "ProfileParser", p.userName
 	return config.ParseProfile, p.userName //
 }

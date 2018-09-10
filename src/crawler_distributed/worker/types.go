@@ -37,7 +37,6 @@ type ParseResult struct {
 //}
 func SerializeRequest(r engine.Request) Request {
 	name, args := r.Parser.Serialize()
-	log.Printf("SerializeRequest "+name)
 	return Request{
 		Url: r.Url,
 		Parser: SerializedParser{
@@ -76,7 +75,7 @@ func DeserializeResult(r ParseResult) engine.ParseResult{
 	for _, req := range r.Requests {
 		engineReq, err := DeserializeRequest(req)
 		if err!=nil{
-			log.Printf("erro deserilizing request:%v",err)
+			log.Printf("error deserilizing request:%v",err)
 			continue
 		}
 		result.Requests = append(result.Requests, engineReq)
@@ -102,12 +101,12 @@ func deserializeParser(p SerializedParser) (engine.Parser, error) {
 		return engine.NilParser{}, nil
 	//case config.ParseProfile:
 	case config.ParseProfile:
-		log.Printf("ParseProfile")
+
 		if userName, ok := p.Args.(string); ok {
-			log.Print(userName)
+			//log.Print(userName)
 			return parser.NewProfileParser(userName), nil
 		} else {
-			log.Print("ParseProfile falls")
+			//log.Print("ParseProfile falls")
 			return nil, fmt.Errorf("invalid arg:%v", p.Args)
 		}
 
