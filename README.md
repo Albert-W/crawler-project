@@ -7,7 +7,7 @@ This is the mainPage
 This is the homePage
 ![image](https://raw.githubusercontent.com/Albert-W/crawler-website/master/image/HomePage.jpg)
 
-##Features
+## Features
 - Go language
 - Docker
 - Elastic Search
@@ -15,7 +15,7 @@ This is the homePage
 - Microservices
 - Singleton -> Concurrent -> Distribute
 
-##Installation and go package
+## Installation and go package
 - go language
 - docker
 - elasticsearch
@@ -25,7 +25,7 @@ This is the homePage
 - gopm get -g -v golang.org/x/net/html
 - go get gopkg.in/olivere/elastic.v5
 
-##Usage for Singleton 
+## Usage for Singleton 
 - Start Docker.
 - Run Script "docker run -d -p 9200:9200 elasticsearch"
 - Run "src/crawler/main.go", to start the singleton crawler.
@@ -33,7 +33,7 @@ This is the homePage
 - Visit "http://localhost:8888/" in your browser
 - Type in query string with REST format. such as "女 && Age>20"
 
-##Usage for Concurrent
+## Usage for Concurrent
 - Start Docker.
 - Run Script "docker run -d -p 9200:9200 elasticsearch"
 - run "src/crawler_distributed/persist/server/ItemSaver.go"
@@ -43,5 +43,5 @@ This is the homePage
 - Visit "http://localhost:8888/" in your browser
 - Type in query string with REST format. such as "男 && 已购车"
 
-##Reference
+## Reference
 - Google资深工程师深度讲解Go语言 @ https://coding.imooc.com/class/180.html
