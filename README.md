@@ -1,0 +1,34 @@
+# Crawler-website
+It's crawler website using Go language.
+
+This is the mainPage
+![image](https://raw.githubusercontent.com/Albert-W/crawler-website/master/image/MainPage.jpg)
+
+This is the homePage
+![image](https://raw.githubusercontent.com/Albert-W/crawler-website/master/image/HomePage.jpg)
+
+##Features
+- Go language
+- Docker
+- Elastic Search
+- MVC pattern
+- Microservices
+- Singleton -> Concurrent -> Distribute
+
+##Usage for Singleton 
+- Start Docker.
+- Run Script "docker run -d -p 9200:9200 elasticsearch"
+- Run "src/crawler/main.go", to start the singleton crawler.
+- Run "src/crawler/frontend/starter.go", to view the result in the website.
+- Visit "http://localhost:8888/" in your browser
+- Type in query string with REST format. such as "女 && Age>20"
+
+##Usage for Concurent
+- Start Docker.
+- Run Script "docker run -d -p 9200:9200 elasticsearch"
+- run "src/crawler_distributed/persist/server/ItemSaver.go"
+- run "src/crawler_distributed/worker/server/worker.go"
+- run "src/crawler_distributed/main.go"
+- Run "src/crawler/frontend/starter.go", to view the result in the website.
+- Visit "http://localhost:8888/" in your browser
+- Type in query string with REST format. such as "男 && 已购车"
