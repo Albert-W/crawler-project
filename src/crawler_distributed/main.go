@@ -10,28 +10,41 @@ import (
 	"crawler_distributed/rpcsupport"
 	worker "crawler_distributed/worker/client"
 	"flag"
-	"fmt"
 	"log"
 	"net/rpc"
+	"strings"
 )
 
 var (
-	itemSaverHost= flag.String("itemsaver_host","","itemsaver host")
-	workerHosts = flag.String("worker_hosts","","worker hosts(comma separated)")
+	itemSaverHost= flag.String("itemsaver_host","",
+		"itemsaver host")
+	workerHosts = flag.String("worker_hosts","",
+		"worker hosts(comma separated)")
 	)
 
 func main() {
-
+	flag.Parse()
 	itemChan, err := itemsaver.ItemSaver(
-		fmt.Sprintf(":%d", config.ItemSaverPort))
+		*itemSaverHost)
 	if err != nil {
 		panic(err)
 	}
 
-	processor, err := worker.CreateProcessor()
-	if err!= nil {
-		panic(err)
-	}
+	//itemChan, err := itemsaver.ItemSaver(
+	//	fmt.Sprintf(":%d", config.ItemSaverPort))
+	//if err != nil {
+	//	panic(err)
+	//}
+
+	pool :=createClientPool(
+		strings.Split(*workerHosts,","))
+	processor := worker.CreateProcessor(pool)
+
+
+	//processor, err := worker.CreateProcessor()
+	//if err!= nil {
+	//	panic(err)
+	//}
 
 	e := engine.ConcurrentEngine{
 		//Scheduler:&scheduler.SimpleScheduler{},
@@ -55,7 +68,6 @@ func main() {
 	})
 
 
-	//flag.Parse()
 
 	//concurrentScheduler() //并发队列版，每个worker单独用一个channel
 	//simpleScheduler()  //并发非队列版，公用一个channel
@@ -115,6 +127,7 @@ func singleCity() {
 
 }
 
+//建client channel 的pool
 func createClientPool(hosts []string) chan *rpc.Client {
 	var clients []*rpc.Client
 	for _, h := range hosts {
@@ -126,8 +139,9 @@ func createClientPool(hosts []string) chan *rpc.Client {
 			log.Printf("error connecting to %s：%v", h, err)
 		}
 	}
-
+	//向channel 分发
 	out := make(chan *rpc.Client)
+	//轮流分发，始终分发for{}
 	go func() {
 		for {
 			for _, client := range clients {
