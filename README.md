@@ -43,5 +43,5 @@ This is the homePage
 - Visit "http://localhost:8888/" in your browser
 - Type in query string with REST format. such as "男 && 已购车"
 
-## Reference
+## Reference 
 - Google资深工程师深度讲解Go语言 @ https://coding.imooc.com/class/180.html
