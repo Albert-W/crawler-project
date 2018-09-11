@@ -45,6 +45,7 @@ This is the homePage
 - Type in query string with REST format. such as "男 && 已购车"
 
 ## Architecture
+![image](./image/HomePage.jpg)
 ![image](./image/Architecture.png)
 
 ## Framework
