@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7bf2374-d1b2-449b-b943-3e3a8a738b66" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawler/fetcher/fetcher.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/fetcher/fetcher.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawler_distributed/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler_distributed/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawler_distributed/persist/server/ItemSaver.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler_distributed/persist/server/ItemSaver.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawler_distributed/worker/client/worker.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler_distributed/worker/client/worker.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawler_distributed/worker/server/worker.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler_distributed/worker/server/worker.go" afterDir="false" />
-    </list>
+    <list default="true" id="b7bf2374-d1b2-449b-b943-3e3a8a738b66" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,23 +13,24 @@
     <session id="1408891002">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="32" />
+          <entry key="go" value="36" />
           <entry key="html" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="32" />
+          <entry key="Go" value="36" />
           <entry key="HTML" value="2" />
         </counts>
       </usages-collector>
@@ -60,14 +53,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/crawler_distributed/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="208">
+              <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
               <folding>
-                <element signature="e#14#296#0" expanded="true" />
-                <element signature="e#604#643#0" expanded="true" />
-                <element signature="e#793#837#0" expanded="true" />
-                <element signature="e#1129#1152#0" expanded="true" />
-                <element signature="e#1483#1535#0" expanded="true" />
                 <element signature="n#!!block;n#simpleScheduler#0" expanded="true" />
                 <element signature="n#!!block;n#singleCity#0" expanded="true" />
                 <element signature="n#!!block;n#createClientPool#0" expanded="true" />
@@ -76,11 +64,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/crawler/fetcher/fetcher.go">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/crawler_distributed/persist/client/itemsaver.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+            <state relative-caret-position="64">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <folding>
+                <element signature="n#!!block;n#ItemSaver#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,8 +79,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/crawler_distributed/config/config.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <state relative-caret-position="160">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/crawler/scheduler/simple.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+              <folding>
+                <element signature="n#!!block;n#Submit#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,51 +100,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/crawler_distributed/worker/server/worker.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+            <state relative-caret-position="288">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
-                <element signature="e#14#132#0" expanded="true" />
-                <element signature="e#134#150#0" expanded="true" />
-                <element signature="e#236#268#0" expanded="true" />
+                <element signature="n#!!block;n#main#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/crawler_distributed/rpcsupport/rpc.go">
+        <entry file="file://$PROJECT_DIR$/src/crawler/fetcher/fetcher.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-              <folding>
-                <element signature="n#!!block;n#ServeRpc#0" expanded="true" />
-                <element signature="n#!!block;n#NewClient#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="29">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/crawler_distributed/worker/client/worker.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-              <folding>
-                <element signature="e#16#115#0" expanded="true" />
-                <element signature="e#146#154#0" expanded="true" />
-                <element signature="n#!!block;n#CreateProcessor#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/crawler_distributed/persist/server/ItemSaver.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="192">
+              <caret line="21" column="63" lean-forward="true" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
               <folding>
-                <element signature="e#283#329#0" expanded="true" />
                 <element signature="n#!!block;n#serveRpc#0" expanded="true" />
               </folding>
             </state>
@@ -151,7 +133,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/crawler/persist/itemsaver.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="80">
               <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding>
                 <element signature="e#17#136#0" expanded="true" />
@@ -223,10 +205,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="416" />
-    <option name="y" value="102" />
-    <option name="width" value="1228" />
-    <option name="height" value="949" />
+    <option name="x" value="1948" />
+    <option name="y" value="54" />
+    <option name="width" value="1229" />
+    <option name="height" value="950" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -234,8 +216,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -260,6 +241,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="crawler" type="462c0819:PsiDirectoryNode" />
               <item name="fetcher" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crawler-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crawler-website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="scheduler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="crawler-website" type="b2602c69:ProjectViewProjectNode" />
@@ -302,13 +290,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="crawler_distributed" type="462c0819:PsiDirectoryNode" />
               <item name="worker" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crawler-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crawler-website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler_distributed" type="462c0819:PsiDirectoryNode" />
+              <item name="worker" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -320,6 +317,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="go.vgo.advertise" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Minshengmall" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="D:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -422,17 +420,18 @@
       <workItem from="1536616101834" duration="350000" />
       <workItem from="1536616455659" duration="79000" />
       <workItem from="1536616615221" duration="3913000" />
+      <workItem from="1536654570484" duration="1224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8052000" />
+    <option name="totallyTimeSpent" value="9276000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="336" y="83" width="990" height="765" extended-state="0" />
+    <frame x="1943" y="44" width="991" height="766" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2671674" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27331188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -524,13 +523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
           <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
-          <folding>
-            <element signature="n#!!block;n#Parse#0" expanded="true" />
-            <element signature="n#!!block;n#Serialize#0" expanded="true" />
-            <element signature="n#!!block;n#Parse#1" expanded="true" />
-            <element signature="n#!!block;n#Serialize#1" expanded="true" />
-            <element signature="n#!!block;n#NewFuncParser#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -554,6 +546,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../goLab/课件代码/src/crawler_distributed/worker/client/worker.go" />
+    <entry file="file://$PROJECT_DIR$/src/crawler_distributed/rpcsupport/rpc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!block;n#ServeRpc#0" expanded="true" />
+            <element signature="n#!!block;n#NewClient#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler_distributed/worker/client/worker.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="e#16#115#0" expanded="true" />
+            <element signature="n#!!block;n#CreateProcessor#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/persist/itemsaver.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="e#17#136#0" expanded="true" />
+            <element signature="n#!!block;n#Save#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/crawler_distributed/worker/types.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="848">
@@ -571,84 +597,38 @@
     <entry file="file://$PROJECT_DIR$/src/crawler/zhenai/parser/citylist_test.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../goLab/课件代码/src/crawler_distributed/worker/client/worker.go">
+    <entry file="file://$PROJECT_DIR$/src/crawler/fetcher/fetcher.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="29">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/scheduler/simple.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
           <folding>
-            <element signature="e#16#145#0" expanded="true" />
-            <element signature="n#!!block;n#CreateProcessor#0" expanded="true" />
+            <element signature="n#!!block;n#Submit#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/persist/itemsaver.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="e#17#136#0" expanded="true" />
-            <element signature="n#!!block;n#Save#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler_distributed/worker/client/worker.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="e#16#115#0" expanded="true" />
-            <element signature="e#146#154#0" expanded="true" />
-            <element signature="n#!!block;n#CreateProcessor#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler_distributed/rpcsupport/rpc.go">
+    <entry file="file://$PROJECT_DIR$/src/crawler_distributed/persist/client/itemsaver.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding>
-            <element signature="n#!!block;n#ServeRpc#0" expanded="true" />
-            <element signature="n#!!block;n#NewClient#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler_distributed/worker/server/worker.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-          <folding>
-            <element signature="e#14#132#0" expanded="true" />
-            <element signature="e#134#150#0" expanded="true" />
-            <element signature="e#236#268#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler_distributed/persist/server/ItemSaver.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#283#329#0" expanded="true" />
-            <element signature="n#!!block;n#serveRpc#0" expanded="true" />
+            <element signature="n#!!block;n#ItemSaver#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/crawler_distributed/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="208">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
           <folding>
-            <element signature="e#14#296#0" expanded="true" />
-            <element signature="e#604#643#0" expanded="true" />
-            <element signature="e#793#837#0" expanded="true" />
-            <element signature="e#1129#1152#0" expanded="true" />
-            <element signature="e#1483#1535#0" expanded="true" />
             <element signature="n#!!block;n#simpleScheduler#0" expanded="true" />
             <element signature="n#!!block;n#singleCity#0" expanded="true" />
             <element signature="n#!!block;n#createClientPool#0" expanded="true" />
@@ -656,17 +636,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler_distributed/config/config.go">
+    <entry file="file://$PROJECT_DIR$/src/crawler_distributed/worker/server/worker.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        <state relative-caret-position="288">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="n#!!block;n#main#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/fetcher/fetcher.go">
+    <entry file="file://$PROJECT_DIR$/src/crawler_distributed/config/config.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        <state relative-caret-position="160">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler_distributed/persist/server/ItemSaver.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="21" column="63" lean-forward="true" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+          <folding>
+            <element signature="n#!!block;n#serveRpc#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

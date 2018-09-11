@@ -1,1 +1,7 @@
 bin/
+src/github.com/gpmgo/gopm/
+src/github.com/mailru/easyjson/
+src/github.com/pkg/errors/
+src/github.com/Unknwon/com/
+src/golang.org/x/text/
+src/gopkg.in/olivere/elastic.v5/
