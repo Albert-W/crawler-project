@@ -15,7 +15,7 @@ This is the homePage
 - Microservices
 - Singleton -> Concurrent -> Distribute
 
-## Installation and go package
+## Installation and go packages
 - go language
 - docker
 - elasticsearch
@@ -25,7 +25,7 @@ This is the homePage
 - gopm get -g -v golang.org/x/net/html
 - go get gopkg.in/olivere/elastic.v5
 
-## Usage for Singleton 
+## Usage for Concurrent
 - Start Docker.
 - Run Script "docker run -d -p 9200:9200 elasticsearch"
 - Run "src/crawler/main.go", to start the singleton crawler.
@@ -33,15 +33,25 @@ This is the homePage
 - Visit "http://localhost:8888/" in your browser
 - Type in query string with REST format. such as "女 && Age>20"
 
-## Usage for Concurrent
+## Usage for Distribute
 - Start Docker.
 - Run Script "docker run -d -p 9200:9200 elasticsearch"
-- run "src/crawler_distributed/persist/server/ItemSaver.go"
-- run "src/crawler_distributed/worker/server/worker.go"
-- run "src/crawler_distributed/main.go"
+- Open a Terminal, execute: src\crawler_distributed\persist\server>go run ItemSaver.go --port=1234
+- Open a Terminal, execute: src\crawler_distributed\worker\server>go run worker.go --port=9000
+- Open a Terminal, execute: src\crawler_distributed\worker\server>go run worker.go --port=9001
+- Open a Terminal, execute: src\crawler_distributed>go run main.go --itemsaver_host=":1234" --worker_hosts=":9000,:9001"
 - Run "src/crawler/frontend/starter.go", to view the result in the website.
 - Visit "http://localhost:8888/" in your browser
 - Type in query string with REST format. such as "男 && 已购车"
+
+## Architecture
+![image](https://github.com/Albert-W/crawler-website/blob/master/image/Architecture.png)
+
+## Framework
+![image](https://github.com/Albert-W/crawler-website/blob/master/image/Frame.png)
+
+## Algorithm
+![image](https://github.com/Albert-W/crawler-website/blob/master/image/Algorithm.png)
 
 ## Reference 
 - Google资深工程师深度讲解Go语言 @ https://coding.imooc.com/class/180.html
