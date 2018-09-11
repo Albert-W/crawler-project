@@ -2,10 +2,10 @@
 It's crawler website using Go language.
 
 This is the mainPage
-![image](https://raw.githubusercontent.com/Albert-W/crawler-website/master/image/MainPage.jpg)
+![image](./image/MainPage.jpg)
 
 This is the homePage
-![image](https://raw.githubusercontent.com/Albert-W/crawler-website/master/image/HomePage.jpg)
+![image](./image/HomePage.jpg)
 
 ## Features
 - Go language
