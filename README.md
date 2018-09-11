@@ -45,13 +45,13 @@ This is the homePage
 - Type in query string with REST format. such as "男 && 已购车"
 
 ## Architecture
-![image](https://github.com/Albert-W/crawler-website/blob/master/image/Architecture.png)
+![image](./image/Architecture.png)
 
 ## Framework
-![image](https://github.com/Albert-W/crawler-website/blob/master/image/Frame.png)
+![image](./image/Frame.png)
 
 ## Algorithm
-![image](https://github.com/Albert-W/crawler-website/blob/master/image/Algorithm.png)
+![image](./image/Algorithm.png)
 
 ## Reference 
 - Google资深工程师深度讲解Go语言 @ https://coding.imooc.com/class/180.html
